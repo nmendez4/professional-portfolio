@@ -1,0 +1,172 @@
+/* Root Theme Style */
+:root {
+    --themeColor: rgb(132, 194, 132);
+    --black: rgb(94, 94, 94);
+    --white: gainsboro;
+    --border-radius: 50px;
+}
+
+/* body start */
+body {
+    font-size: 18px;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+/* header start */
+header {
+    padding: 35px;
+    text-align: left;
+    background: rgb(94, 94, 94);
+    color: rgb(132, 194, 132);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    background-color: rgb(132, 194, 132);
+    color: gainsboro;
+}
+/* header end */
+
+/* nav start */
+nav ul, li {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    background-color: rgb(132, 194, 132);
+}
+
+nav a {
+    color: gainsboro;
+    padding: 15px 20px;
+    text-decoration: rgb(132, 194, 132);
+    text-align: right;
+}
+
+nav a:hover {
+    background-color: white;
+    color:rgb(132, 194, 132);
+}
+/* nav end */
+
+/* main start */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+/* main end */
+
+/* footer start */
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 18px;
+    text-align:justify;
+    text-decoration: gainsboro;
+    background:rgb(94, 94, 94);
+    color: rgb(132, 194, 132);
+    margin-top: auto;
+    margin-right: 25px;
+}
+
+footer h3 {
+    text-decoration-color: gainsboro;
+    font-size: 1.3rem;
+}
+/* footer end */
+
+/* title cards */
+.title-cards {
+    flex: 1;
+    background-color: rgb(132, 194, 132);
+    padding: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* about me section */
+.about-me {
+    border-style: solid;
+    border-radius: var(--themeColor);
+    padding: 10px;
+    flex: 0 0 350px;
+    box-shadow: 10px 10px 5px gainsboro;
+    margin: 18px;
+}
+
+.about-me h2 {
+    background-color: rgb(94, 94, 94);
+    color: rgb(132, 194, 132);
+    border-color: gainsboro;
+}
+
+.about-me img {
+    width: 27%;
+    min-width: 400px;
+    align-items:center;
+}
+
+.about-me p {
+    text-align:right;
+    color:rgb(132, 194, 132);
+    background-color: gainsboro;
+}
+
+/* my projects section */
+.my-projects {
+    border-style: solid;
+    border-radius: var(--themeColor);
+    padding: 10px;
+    flex: 0 0 350px;
+    box-shadow: 10px 10px 5px gainsboro;
+    margin: 18px;
+}
+
+.my-projects ul,li {
+    margin-left: 5%;
+    font-size: 100%;
+    list-style: lower-greek;
+}
+
+.my-projects a {
+    color: gainsboro;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.my-projects a:hover {
+    text-decoration:underline;
+    text-decoration-color: rgb(132, 194, 132);
+}
+
+/* contact me section */
+.contact-me {
+    border-style: solid;
+    border-radius: var(--themeColor);
+    padding: 10px;
+    flex: 0 0 350px;
+    box-shadow: 10px 10px 5px gainsboro;
+    margin: 18px;
+}
+
+.contact-me a {
+    text-decoration: solid underline;
+    color: gainsboro;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+        flex-direction: column;
+    }
+}
