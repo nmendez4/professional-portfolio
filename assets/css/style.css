@@ -6,6 +6,13 @@
     --border-radius: 50px;
 }
 
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 /* body start */
 body {
     font-size: 18px;
@@ -21,6 +28,7 @@ header {
     text-align: left;
     background: rgb(94, 94, 94);
     color: rgb(132, 194, 132);
+    display: flex;
 }
 
 header h1 {
@@ -37,6 +45,7 @@ nav ul, li {
     justify-content: space-between;
     min-width: 200px;
     background-color: rgb(132, 194, 132);
+    text-decoration: rgb(94, 94, 94);
 }
 
 nav a {
@@ -44,6 +53,7 @@ nav a {
     padding: 15px 20px;
     text-decoration: rgb(132, 194, 132);
     text-align: right;
+    display: flex;
 }
 
 nav a:hover {
@@ -88,10 +98,11 @@ footer h3 {
     flex: 1;
     background-color: rgb(132, 194, 132);
     padding: 45px;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: column;
+    width: 70%;
 }
 
 /* about me section */
@@ -102,24 +113,30 @@ footer h3 {
     flex: 0 0 350px;
     box-shadow: 10px 10px 5px gainsboro;
     margin: 18px;
+    padding: 30px;
 }
 
 .about-me h2 {
     background-color: rgb(94, 94, 94);
     color: rgb(132, 194, 132);
     border-color: gainsboro;
+    text-align: center;
 }
 
 .about-me img {
-    width: 27%;
-    min-width: 400px;
-    align-items:center;
+    width: 15%;
+    max-width: 300px;
+    align-items: center;
+    position: relative;
 }
 
 .about-me p {
-    text-align:right;
+    display: flex;
+    text-align:center;
     color:rgb(132, 194, 132);
     background-color: gainsboro;
+    font-size:large;
+    margin-top: 10px;
 }
 
 /* my projects section */
@@ -132,6 +149,13 @@ footer h3 {
     margin: 18px;
 }
 
+.my-projects h2 {
+    background-color: rgb(94, 94, 94);
+    color: rgb(132, 194, 132);
+    border-color: gainsboro;
+    text-align: center;
+}
+
 .my-projects ul,li {
     margin-left: 5%;
     font-size: 100%;
@@ -142,11 +166,42 @@ footer h3 {
     color: gainsboro;
     font-weight: bold;
     text-decoration: underline;
+    text-decoration-color: rgb(94, 94, 94);
 }
 
-.my-projects a:hover {
-    text-decoration:underline;
-    text-decoration-color: rgb(132, 194, 132);
+.my-projects ul,li img {
+    justify-content: space-between;
+    display: flex;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.run li {
+    justify-content: left;
+}
+
+.run:hover {
+    background-color: rgb(94, 94, 94)
+}
+
+.refract li {
+    justify-content: center;
+}
+
+.refract:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+.hog li {
+    justify-content: right;
+}
+
+.hog img {
+    size: inherit;
+}
+
+.hog:hover {
+    background-color: rgb(94, 94, 94)
 }
 
 /* contact me section */
@@ -159,14 +214,54 @@ footer h3 {
     margin: 18px;
 }
 
+.contact-me h2 {
+    background-color: rgb(94, 94, 94);
+    color: rgb(132, 194, 132);
+    border-color: gainsboro;
+    text-align: center;
+}
+
 .contact-me a {
     text-decoration: solid underline;
     color: gainsboro;
 }
 
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-        flex-direction: column;
-    }
+.contact-me img {
+    justify-content: space-between;
+    display: flex;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.cell img {
+    display: block;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 100px;
+    justify-content:left;
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.mail img {
+    display: block;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 100px;
+    justify-content: center;
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.linked img {
+    display: block;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 100px;
+    justify-content:right;
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
 }
