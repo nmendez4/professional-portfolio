@@ -64,8 +64,8 @@ nav a:hover {
 
 /* main start */
 main {
-    display: flex;
-    flex-wrap: wrap;
+    display: flexbox;
+    width: auto;
 }
 
 main h2 {
@@ -127,7 +127,7 @@ footer h3 {
     width: 15%;
     max-width: 300px;
     align-items: center;
-    position: relative;
+    position:static;
 }
 
 .about-me p {
@@ -169,39 +169,52 @@ footer h3 {
     text-decoration-color: rgb(94, 94, 94);
 }
 
-.my-projects ul,li img {
+.run img {
+    justify-content: left;
     justify-content: space-between;
     display: flex;
     max-height: 300px;
     max-width: 300px;
 }
 
-.run li {
-    justify-content: left;
-}
-
 .run:hover {
     background-color: rgb(94, 94, 94)
 }
 
-.refract li {
+.refract img {
     justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .refract:hover {
     background-color: rgb(94, 94, 94);
 }
 
-.hog li {
-    justify-content: right;
-}
-
 .hog img {
-    size: inherit;
+    justify-content: right;
+    justify-content: space-between;
+    display: flex;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .hog:hover {
     background-color: rgb(94, 94, 94)
+}
+
+.holiday:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+.holiday img {
+    justify-content: right;
+    justify-content: space-between;
+    display: flex;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 /* contact me section */
@@ -226,42 +239,14 @@ footer h3 {
     color: gainsboro;
 }
 
-.contact-me img {
-    justify-content: space-between;
-    display: flex;
-    max-height: 100px;
-    max-width: 100px;
-}
+ /* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
 
-.cell img {
-    display: block;
-    flex-direction: column;
-    margin: 10px auto;
-    max-width: 100px;
-    justify-content:left;
-    position: relative;
-    max-width: 100px;
-    max-height: 100px;
-}
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) { ... } */
 
-.mail img {
-    display: block;
-    flex-direction: column;
-    margin: 10px auto;
-    max-width: 100px;
-    justify-content: center;
-    position: relative;
-    max-width: 100px;
-    max-height: 100px;
-}
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) { ... } */
 
-.linked img {
-    display: block;
-    flex-direction: column;
-    margin: 10px auto;
-    max-width: 100px;
-    justify-content:right;
-    position: relative;
-    max-width: 100px;
-    max-height: 100px;
-}
+/* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { ... }  */
