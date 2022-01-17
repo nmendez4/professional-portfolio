@@ -217,6 +217,17 @@ footer h3 {
     max-width: 300px;
 }
 
+.take-it img {
+    justify-content: center;
+    justify-content: space-between;
+    display: flexbox;
+    max-width: 300px;
+    max-height: 300px;
+}
+.take-it:hover {
+    background-color: rgb(94, 94, 94);
+}
+
 /* contact me section */
 .contact-me {
     border-style: solid;
